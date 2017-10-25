@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="loginCard">
+    <h2 class="heading">Войти в чат</h2>
+      <form>
+        <input
+          [(ngModel)]="email"
+          type="email"
+          name="email"
+          class="formInput"
+          placeholder="Email"
+          required=""/>
+        <input type="password"
+          [(ngModel)]="password"
+          name="password"
+          class="formInput"
+          placeholder="Пароль"
+          required="" />
+        <button type="submit"
+                class="btn"
+                id="btn-login"
+                (click)="login()">
+                Войти
+        </button>
+        <button (click)="linkToSignUp()" class="btn linkToSignUp">Регистрация</button>
+      </form>
+  </div>
+</div>

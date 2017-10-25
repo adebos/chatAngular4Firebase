@@ -1,0 +1,29 @@
+.mainContent {
+	display: flex;
+}
+
+.userListWrapper {
+	color: #ffffff;
+	font-family: "Open Sans", sans-serif; font-size: 1.2em;
+	display: flex; flex: 1; order: 1; padding: 20px 0 40px 30px;
+	background-color: #2A2845; border-right: 1px solid #222222;
+}
+
+.feedWrapper {
+	font-family: "Open Sans", sans-serif; font-size: 1.2em;
+		overflow-y: scroll;
+	flex: 5; order: 2; padding: 20px 0 0 24px;
+	background-color: #ffffff;
+	background:
+	linear-gradient(180deg, rgba(100,200,255,0.6), rgba(0,0,0,0.9));/*,
+	url('../../assets/img/chat-bg-1.png') center center no-repeat;;*/
+}
+.chatFormWrapper {
+	display: flex; height: 50px;
+	z-index: 3;
+	background-color: #eeeeee;
+}
+#scroll-style::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}

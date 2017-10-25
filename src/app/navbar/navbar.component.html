@@ -1,0 +1,20 @@
+<div class="navbar">
+	<div id="logo"></div>
+	<div id="heading">
+		<a routerLink="/chat">Мой общий чат</a>
+	</div>
+	<div class="links">
+		<span>
+			<a *ngIf="!(user|async)?.uid" routerLink="/login">Войти</a>
+		</span>
+		<span>
+			<a *ngIf="!(user|async)?.uid" routerLink="/signup">Зарегистрироваться</a>
+		</span>
+		<span>
+			<a *ngIf="(user|async)?.uid" id="userEmail">Привет, {{userEmail}}</a>
+		</span>
+		<span>
+			<a *ngIf="(user|async)?.uid" (click)="this.authService.logout()">Выйти</a>
+		</span>
+	</div>
+</div>

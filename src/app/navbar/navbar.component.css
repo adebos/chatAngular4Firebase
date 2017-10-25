@@ -1,0 +1,40 @@
+.navbar	{
+	display: flex; width: 100%;
+	background-color: #EAEAEB;
+}
+
+#logo {
+	display: inline-block; width: 60px;; height: 60px;
+		margin: 12px 10px 12px 32px; min-width: 60px;
+	background-size: cover; background-image: url('../../assets/img/photo.jpg');
+}
+
+#heading {
+	font-size: 1.8em; font-weight: 700;
+	flex: 4; height: 60px; padding: 24px 0 8px 10px;
+}
+
+.links {
+	white-space: nowrap;
+	display: block; padding-top: 32px; padding-right: 30px;
+}
+
+#heading > a {
+	color: #000000; text-decoration: none;
+}
+
+.links a {
+	color: #555; text-decoration: none; cursor: pointer;
+	overflow: hidden;
+	padding-right: 12px;
+	transition: .2 ease-in;
+}
+
+.links a:hover {
+	color: #1E88E5;
+	transition: .2 ease-in;
+}
+
+#userEmail {
+	padding-right: 16px; font-weight: 600; cursor: default;
+}
